@@ -7,7 +7,7 @@ import javax.persistence.Table;
 @Table
 public class Acteur {
 	
-	private int id;
+	private long id;
 	private String nom;
 	private String prenom;
 	private String email;
@@ -19,7 +19,7 @@ public class Acteur {
 	}
 
 
-	public Acteur(int id, String nom, String prenom, String email, String ville) {
+	public Acteur(long id, String nom, String prenom, String email, String ville) {
 		super();
 		this.id = id;
 		this.nom = nom;
@@ -29,12 +29,12 @@ public class Acteur {
 	}
 
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
