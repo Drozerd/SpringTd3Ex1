@@ -1,13 +1,17 @@
 package com.inti.model;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
+
+import lombok.NonNull;
 
 @Entity
 @Table
 public class Acteur {
-	
+	@Id
 	private long id;
+	@NonNull
 	private String nom;
 	private String prenom;
 	private String email;
